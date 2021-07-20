@@ -16,7 +16,13 @@ body {
   justify-content: space-between;
 
   .logo-div {
-    padding: $pad1;
+    .material-icons {
+      @include flexColCenter;
+      font-size: 5rem;
+      @media (max-width: 575.98px) {
+        font-size: 3rem;
+      }
+    }
   }
 
   .nav-ul {
@@ -103,6 +109,10 @@ body {
   @media (max-width: 575.98px) {
     @include flexColCenter;
     text-align: center;
+  }
+  @media (max-width: 767.98px) {
+    font-size: $fsSmall;
+    margin-left: 0;
   }
 }
 
