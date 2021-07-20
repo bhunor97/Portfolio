@@ -1,17 +1,74 @@
-@import "_resets", "colors", "fonts";
+@import "resets", "mixins", "colors", "fonts", "buttons", "sizes";
 
-section {
-  height: 500px;
-  background-color: green;
-  border: 1px solid black;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-.hero {
+// HERO-SECTION
+.hero-section {
   height: 100vh;
-  background-color: red;
+  background-color: $color2;
+  color: $secondaryFontC;
 }
 
-footer {
-  height: 500px;
-  background-color: black;
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+
+  .logo-div {
+    padding: $pad1;
+  }
+
+  .nav-ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    li {
+      font-size: $font1;
+      font-weight: $bold;
+      padding: $pad1;
+      margin-right: $marg5;
+    }
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: $marg5;
+  height: 100%;
+  h1 {
+    font-size: $font5;
+    font-weight: $bold;
+  }
+  p {
+    font-size: $font2;
+    font-weight: $regular;
+    margin-top: $marg1;
+    margin-bottom: $marg1;
+  }
+  .button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: $color5;
+    height: $buttonHeight;
+    width: $buttonWidth;
+    font-weight: $bold;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: $color1;
+      color: $primaryFontC;
+    }
+  }
+}
+
+// PROJECTS-SECTION
+.projects-section {
+  height: 100vh;
+  background-color: $color3;
 }
