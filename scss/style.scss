@@ -1,4 +1,4 @@
-@import "_resets";
+@import "_resets", "colors", "fonts";
 
 section {
   height: 500px;
@@ -9,4 +9,9 @@ section {
 .hero {
   height: 100vh;
   background-color: red;
+}
+
+footer {
+  height: 500px;
+  background-color: black;
 }
