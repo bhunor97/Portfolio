@@ -1,5 +1,18 @@
-body {
-  background: red;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  height: 500px;
+  background-color: green;
+  border: 1px solid black;
+}
+
+.hero {
+  height: 100vh;
+  background-color: red;
 }
 
 /*# sourceMappingURL=main.css.map */

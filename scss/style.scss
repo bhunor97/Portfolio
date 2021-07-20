@@ -1,5 +1,12 @@
-$red: red;
+@import "_resets";
 
-body {
-  background: $red;
+section {
+  height: 500px;
+  background-color: green;
+  border: 1px solid black;
+}
+
+.hero {
+  height: 100vh;
+  background-color: red;
 }
