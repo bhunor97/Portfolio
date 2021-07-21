@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 1px solid black;
 }
 
 body {
@@ -34,7 +33,7 @@ body {
   font-weight: 700;
   padding: 1em;
   cursor: pointer;
-  margin-right: 5em;
+  margin-right: 10rem;
   transition: 0.2s ease-in-out;
 }
 .nav-bar .nav-ul li:hover {
@@ -57,7 +56,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-left: 5em;
+  margin-left: 10rem;
 }
 .flex-container .hero-div h1 {
   font-weight: 700;
@@ -86,8 +85,8 @@ body {
 .flex-container .hero-div p {
   font-size: 2rem;
   font-weight: 400;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 @media (max-width: 991.98px) {
   .flex-container .hero-div p {
@@ -147,8 +146,8 @@ body {
   padding: 1em;
 }
 .flex-container .firstPage-socials svg {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   cursor: pointer;
   transition: 0.2s ease;
   fill: #fff;
@@ -158,9 +157,41 @@ body {
   fill: #35b8f0;
 }
 
-.projects-section {
-  height: 100vh;
-  background-color: #35b8f0;
+.aboutMe-section {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  height: auto;
+  background-color: #fff;
+}
+.aboutMe-section .aboutMe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.aboutMe-section .aboutMe-container h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.aboutMe-section .aboutMe-container p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.photo-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.photo-div img {
+  height: 25rem;
+  border-radius: 100%;
+  border: none;
 }
 
 /*# sourceMappingURL=main.css.map */

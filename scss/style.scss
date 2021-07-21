@@ -138,9 +138,37 @@ body {
 }
 
 // PROJECTS-SECTION
-.projects-section {
-  height: 100vh;
-  background-color: $color3;
+.aboutMe-section {
+  @include paddingLeftRight;
+  @include paddingTopBottom;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  height: auto;
+  background-color: #fff;
+
+  .aboutMe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    h1 {
+      font-size: $fsMedium;
+      font-weight: $bold;
+    }
+    p {
+      font-size: $fsSmall;
+      font-weight: $regular;
+    }
+  }
+}
+
+.photo-div {
+  @include flexColCenter;
+  img {
+    height: 25rem;
+    border-radius: 100%;
+    border: none;
+  }
 }
 
 // MIN-WIDTH

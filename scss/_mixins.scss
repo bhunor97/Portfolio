@@ -11,3 +11,18 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin marginLeftRight {
+  margin-left: $marg5;
+  margin-right: $marg5;
+}
+
+@mixin paddingLeftRight {
+  padding-left: $marg5;
+  padding-right: $marg5;
+}
+
+@mixin paddingTopBottom {
+  padding-top: $marg5;
+  padding-bottom: $marg5;
+}
