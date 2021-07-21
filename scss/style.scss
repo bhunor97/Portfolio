@@ -78,7 +78,6 @@ body {
       font-size: $fsSmall;
       font-weight: $regular;
       margin-top: $marg1;
-      margin-bottom: $marg1;
 
       @media (max-width: 991.98px) {
         font-size: $fsSmall;
@@ -93,12 +92,12 @@ body {
       width: $buttonWidth;
       font-size: $fsExtraSmall;
       font-weight: $bold;
+      margin-top: $marg2;
       border: none;
       cursor: pointer;
-      transform: scale(0.9);
       transition: 0.4s ease;
       &:hover {
-        transform: scale(1);
+        transform: scale(1.1);
         background-color: $color1;
         color: $primaryFontC;
       }
