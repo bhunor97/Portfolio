@@ -4,7 +4,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-// HERO-SECTION STARTS
+// HERO-SECTION START
 .hero-section {
   height: 100vh;
   background-color: $color2;
@@ -14,10 +14,15 @@ body {
 // NAVBAR
 .nav-bar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 
   .logo-div {
     padding: $pad1;
+
+    .material-icons {
+      font-size: 3rem;
+    }
   }
 
   .nav-ul {
@@ -71,6 +76,7 @@ body {
       }
       @media (max-width: 575.98px) {
         font-size: $fsRegular;
+        align-items: center;
       }
     }
 
@@ -81,6 +87,12 @@ body {
 
       @media (max-width: 991.98px) {
         font-size: $fsSmall;
+      }
+
+      @media (max-width: 575.98px) {
+        font-size: $fsSmall;
+        font-weight: $light;
+        align-items: center;
       }
     }
 
@@ -101,21 +113,31 @@ body {
         background-color: $color1;
         color: $primaryFontC;
       }
+      @media (max-width: 575.98px) {
+        margin-top: 0;
+        margin-bottom: $marg3;
+        width: 10rem;
+      }
     }
 
     @media (max-width: 767.98px) {
       @include flexColCenter;
       text-align: center;
+      font-size: $fsSmall;
     }
     @media (max-width: 575.98px) {
       @include flexColCenter;
       text-align: center;
+      margin-left: $marg3;
     }
-    @media (max-width: 767.98px) {
-      font-size: $fsSmall;
-      margin-left: 0;
+    @media (max-width: 575.98px) {
+      @include flexColCenter;
+      justify-content: space-around;
+      text-align: center;
+      margin-left: $marg3;
     }
   }
+  // SOCIALS
   .firstPage-socials {
     display: flex;
     flex-direction: column;
@@ -132,11 +154,15 @@ body {
         transform: scale(1.2);
         fill: $color3;
       }
+      @media (max-width: 575.98px) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
     }
   }
 }
-
-// PROJECTS-SECTION
+// HERO-SECTION STARTS END
+// PROJECTS-SECTION START
 .aboutMe-section {
   @include paddingLeftRight;
   @include paddingTopBottom;
@@ -153,44 +179,70 @@ body {
     h1 {
       font-size: $fsMedium;
       font-weight: $bold;
+      @media (max-width: 575.98px) {
+        font-size: $fsRegular;
+        font-weight: $bold;
+        margin: $marg2;
+      }
     }
     p {
       font-size: $fsSmall;
       font-weight: $regular;
+      @media (max-width: 575.98px) {
+        font-size: $fsSmall;
+        font-weight: $regular;
+        margin: $marg2;
+      }
+    }
+    @media (max-width: 991.98px) {
+      text-align: center;
+    }
+    @media (max-width: 575.98px) {
+      text-align: center;
     }
   }
-}
 
-.photo-div {
-  @include flexColCenter;
-  img {
-    height: 25rem;
-    border-radius: 100%;
-    border: none;
+  .photo-div {
+    @include flexColCenter;
+    img {
+      height: 25rem;
+      border-radius: 100%;
+      margin-left: $marg1;
+      border: none;
+      @media (max-width: 575.98px) {
+        height: 15rem;
+      }
+    }
   }
+  @media (max-width: 991.98px) {
+    @include flexColCenter;
+  }
+
+  @media (max-width: 575.98px) {
+    @include flexColCenter;
+    padding-top: $pad5;
+    padding-bottom: $pad5;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  // @media (max-width: 767.98px) { ... }
+
+  // @media (max-width: 991.98px) { ... }
+
+  // @media (max-width: 1199.98px) {
+
+  //  }
 }
 
 // MIN-WIDTH
-// // Small devices (landscape phones, 576px and up)
 // @media (min-width: 576px) { ... }
-
-// // Medium devices (tablets, 768px and up)
 // @media (min-width: 768px) { ... }
-
-// // Large devices (desktops, 992px and up)
 // @media (min-width: 992px) { ... }
-
-// // Extra large devices (large desktops, 1200px and up)
 // @media (min-width: 1200px) { ... }
 
 // MAX-WIDTH
 // @media (max-width: 575.98px) { ... }
-
-// // Small devices (landscape phones, less than 768px)
 // @media (max-width: 767.98px) { ... }
-
-// // Medium devices (tablets, less than 992px)
 // @media (max-width: 991.98px) { ... }
-
-// // Large devices (desktops, less than 1200px)
 // @media (max-width: 1199.98px) { ... }

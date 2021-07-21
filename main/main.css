@@ -16,10 +16,14 @@ body {
 
 .nav-bar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .nav-bar .logo-div {
   padding: 1em;
+}
+.nav-bar .logo-div .material-icons {
+  font-size: 3rem;
 }
 .nav-bar .nav-ul {
   display: flex;
@@ -80,6 +84,7 @@ body {
 @media (max-width: 575.98px) {
   .flex-container .hero-div h1 {
     font-size: 3rem;
+    align-items: center;
   }
 }
 .flex-container .hero-div p {
@@ -90,6 +95,13 @@ body {
 @media (max-width: 991.98px) {
   .flex-container .hero-div p {
     font-size: 2rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .flex-container .hero-div p {
+    font-size: 2rem;
+    font-weight: 300;
+    align-items: center;
   }
 }
 .flex-container .hero-div .button-div {
@@ -113,6 +125,13 @@ body {
   background-color: #f0be29;
   color: #000;
 }
+@media (max-width: 575.98px) {
+  .flex-container .hero-div .button-div {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    width: 10rem;
+  }
+}
 @media (max-width: 767.98px) {
   .flex-container .hero-div {
     display: flex;
@@ -120,6 +139,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 2rem;
   }
 }
 @media (max-width: 575.98px) {
@@ -129,12 +149,18 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left: 3rem;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .flex-container .hero-div {
-    font-size: 2rem;
-    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 3rem;
   }
 }
 .flex-container .firstPage-socials {
@@ -154,6 +180,12 @@ body {
 .flex-container .firstPage-socials svg:hover {
   transform: scale(1.2);
   fill: #35b8f0;
+}
+@media (max-width: 575.98px) {
+  .flex-container .firstPage-socials svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 .aboutMe-section {
@@ -176,21 +208,70 @@ body {
   font-size: 5rem;
   font-weight: 700;
 }
+@media (max-width: 575.98px) {
+  .aboutMe-section .aboutMe-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 2rem;
+  }
+}
 .aboutMe-section .aboutMe-container p {
   font-size: 2rem;
   font-weight: 400;
 }
-
-.photo-div {
+@media (max-width: 575.98px) {
+  .aboutMe-section .aboutMe-container p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 2rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .aboutMe-section .aboutMe-container {
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .aboutMe-section .aboutMe-container {
+    text-align: center;
+  }
+}
+.aboutMe-section .photo-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.photo-div img {
+.aboutMe-section .photo-div img {
   height: 25rem;
   border-radius: 100%;
+  margin-left: 1rem;
   border: none;
+}
+@media (max-width: 575.98px) {
+  .aboutMe-section .photo-div img {
+    height: 15rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .aboutMe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .aboutMe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
