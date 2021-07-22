@@ -252,13 +252,16 @@ body {
   .project-div {
     @include flexColCenter;
     background-color: #fff;
-    box-shadow: 5px 5px 20px rgb(102, 102, 102);
+    box-shadow: 5px 5px 20px rgb(88, 88, 88);
     width: 20rem;
     height: auto;
+    margin-top: $marg3;
     img {
       width: inherit;
       height: 500px;
       object-fit: cover;
+      border: 15px solid #fff;
+      border-radius: 20px;
     }
     h3 {
       text-align: center;
@@ -271,8 +274,13 @@ body {
     hr {
       width: 50%;
     }
-    a:active {
-      color: red;
+    a {
+      text-decoration: none;
+      color: $color2;
+    }
+    transition: ease-in-out 0.3s;
+    &:hover {
+      transform: translateY(-5%);
     }
   }
 }

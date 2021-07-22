@@ -300,14 +300,18 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  box-shadow: 5px 5px 20px #666666;
+  box-shadow: 5px 5px 20px #585858;
   width: 20rem;
   height: auto;
+  margin-top: 3rem;
+  transition: ease-in-out 0.3s;
 }
 .projects-container .project-div img {
   width: inherit;
   height: 500px;
   object-fit: cover;
+  border: 15px solid #fff;
+  border-radius: 20px;
 }
 .projects-container .project-div h3 {
   text-align: center;
@@ -320,8 +324,12 @@ body {
 .projects-container .project-div hr {
   width: 50%;
 }
-.projects-container .project-div a:active {
-  color: red;
+.projects-container .project-div a {
+  text-decoration: none;
+  color: #430ba3;
+}
+.projects-container .project-div:hover {
+  transform: translateY(-5%);
 }
 
 /*# sourceMappingURL=main.css.map */
