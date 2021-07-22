@@ -257,6 +257,7 @@ body {
     @include flexColCenter;
     font-size: $fsMedium;
     font-weight: $bold;
+    margin-bottom: $marg3;
     @media (max-width: 575.98px) {
       font-size: $fsRegular;
     }
