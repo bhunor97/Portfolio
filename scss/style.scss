@@ -43,6 +43,10 @@ body {
       @media (max-width: 991.98px) {
         margin-right: 0;
       }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
     }
   }
 }
@@ -112,6 +116,16 @@ body {
         transform: scale(1.1);
         background-color: $color1;
         color: $primaryFontC;
+        a {
+          color: $primaryFontC;
+        }
+      }
+      a {
+        @include flexColCenter;
+        width: inherit;
+        height: inherit;
+        text-decoration: none;
+        color: $secondaryFontC;
       }
       @media (max-width: 575.98px) {
         margin-top: 0;
