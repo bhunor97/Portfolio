@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 1px solid black;
 }
 
 body {
@@ -348,6 +347,16 @@ body {
 }
 .projects-container .project-div:hover {
   transform: translateY(-5%);
+}
+@media (max-width: 1600px) {
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+footer {
+  height: 50vh;
 }
 
 /*# sourceMappingURL=main.css.map */

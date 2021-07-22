@@ -297,6 +297,16 @@ body {
       transform: translateY(-5%);
     }
   }
+  @media (max-width: 1600px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+// PROJECT SECTION END
+
+// FOOTER SECTION START
+footer {
+  height: 50vh;
 }
 
 // MIN-WIDTH
