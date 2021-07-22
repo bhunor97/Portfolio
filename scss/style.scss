@@ -162,7 +162,8 @@ body {
   }
 }
 // HERO-SECTION STARTS END
-// PROJECTS-SECTION START
+
+// ABOUT-ME SECTION START
 .aboutMe-section {
   @include paddingLeftRight;
   @include paddingTopBottom;
@@ -176,7 +177,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    h1 {
+
+    h2 {
       font-size: $fsMedium;
       font-weight: $bold;
       @media (max-width: 575.98px) {
@@ -225,14 +227,54 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
+}
+// ABOUT-ME SECTION END
 
-  // @media (max-width: 767.98px) { ... }
+// PROJECT SECTION START
+.projects-section {
+  // @include paddingLeftRight;
+  @include paddingTopBottom;
+  background-color: $color1;
 
-  // @media (max-width: 991.98px) { ... }
+  h2 {
+    @include flexColCenter;
+    font-size: $fsMedium;
+    font-weight: $bold;
+  }
+}
 
-  // @media (max-width: 1199.98px) {
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 
-  //  }
+  .project-div {
+    @include flexColCenter;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px rgb(102, 102, 102);
+    width: 20rem;
+    height: auto;
+    img {
+      width: inherit;
+      height: 500px;
+      object-fit: cover;
+    }
+    h3 {
+      text-align: center;
+      padding: $pad1;
+    }
+    p {
+      text-align: center;
+      padding: $pad1;
+    }
+    hr {
+      width: 50%;
+    }
+    a:active {
+      color: red;
+    }
+  }
 }
 
 // MIN-WIDTH
