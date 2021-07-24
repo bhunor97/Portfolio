@@ -6,7 +6,6 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 1px solid black;
 }
 
 body {
@@ -419,6 +418,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
   background-color: #430ba3;
   height: auto;
   color: #fff;
@@ -453,7 +453,7 @@ body {
     font-size: 1rem;
   }
 }
-.footerSection .iconsDiv {
+.footerSection .contact-div .iconsDiv {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -461,15 +461,41 @@ body {
   padding: 2em;
   width: 100%;
 }
-.footerSection .iconsDiv i {
-  font-size: 5rem;
+.footerSection .contact-div .iconsDiv a {
   margin: 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: ease 0.2s;
+}
+.footerSection .contact-div .iconsDiv a i {
+  font-size: 5rem;
+  cursor: pointer;
+}
+.footerSection .contact-div .iconsDiv a:hover {
+  transform: scale(1.1);
+  color: #f0be29;
 }
 @media (max-width: 991.98px) {
-  .footerSection .iconsDiv {
+  .footerSection .contact-div .iconsDiv {
     display: flex;
     flex-wrap: wrap;
   }
+}
+.footerSection .scrollUp {
+  position: absolute;
+  background-color: #430ba3;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+}
+.footerSection .scrollUp i {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.footerSection .scrollUp i:hover {
+  transform: scaleY(1.5);
 }
 
 /*# sourceMappingURL=main.css.map */

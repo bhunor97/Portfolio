@@ -1,7 +1,9 @@
 let hamburgerDiv = document.getElementById("hamburger");
 let navUl = document.getElementById("nav-ul");
-// navUl.style.display = "flex";
+let phone = document.getElementById("phoneNumber");
+let email = document.getElementById("email");
 
+// HAMBURGER MENU
 function myFunction() {
   if (navUl.style.display === "none") {
     navUl.style.display = "flex";
@@ -12,4 +14,18 @@ function myFunction() {
 
 hamburgerDiv.onclick = () => {
   myFunction();
+};
+
+// MOBILE NUMBER
+phone.onclick = () => {
+  alert("06-30-945-2343");
+};
+
+// EMAIL
+function sendEmail() {
+  window.location = "mailto:bhun0r97@gmail.com";
+}
+
+email.onclick = () => {
+  sendEmail();
 };
