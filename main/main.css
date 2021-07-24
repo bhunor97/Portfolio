@@ -6,6 +6,7 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  border: 1px solid black;
 }
 
 body {
@@ -69,7 +70,7 @@ body {
 .nav-bar .hamburger {
   display: none;
   cursor: pointer;
-  transition: ease-in-out 0.3s;
+  transition: ease 0.2s;
 }
 .nav-bar .hamburger:hover {
   transform: scaleY(1.3);
@@ -427,12 +428,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition: ease-in 0.3s;
 }
 .footerSection .contact-div h3 {
   font-size: 5rem;
   font-weight: 700;
+  text-align: center;
+  cursor: default;
+  transition: ease-in 0.3s;
+}
+.footerSection .contact-div h3:hover {
+  color: #f0be29;
 }
 @media (max-width: 575.98px) {
   .footerSection .contact-div h3 {
@@ -448,8 +453,23 @@ body {
     font-size: 1rem;
   }
 }
-.footerSection .contact-div:hover {
-  color: #f0be29;
+.footerSection .iconsDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em;
+  width: 100%;
+}
+.footerSection .iconsDiv i {
+  font-size: 5rem;
+  margin: 1rem;
+}
+@media (max-width: 991.98px) {
+  .footerSection .iconsDiv {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
