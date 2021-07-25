@@ -29,9 +29,14 @@ body {
 .nav-bar .logo-div .material-icons {
   font-size: 3rem;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .nav-bar .logo-div .material-icons {
     font-size: 2rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .nav-bar .logo-div {
+    display: none;
   }
 }
 .nav-bar .nav-ul {
@@ -58,7 +63,21 @@ body {
 }
 @media (max-width: 991.98px) {
   .nav-bar .nav-ul li {
+    margin-right: 1em;
+  }
+}
+@media (max-width: 767.98px) {
+  .nav-bar .nav-ul li {
     margin-right: 0;
+  }
+}
+@media (max-width: 1199.98px) {
+  .nav-bar .nav-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
   }
 }
 @media (max-width: 991.98px) {
@@ -80,16 +99,25 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     border: none;
     background-color: transparent;
     padding: 1em;
     color: #fff;
   }
 }
-
-#nav-ul.show {
-  display: block;
+@media (max-width: 575.98px) {
+  .nav-bar .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    color: #fff;
+  }
 }
 
 .flex-container {
@@ -206,16 +234,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    margin-left: 3rem;
-  }
-}
-@media (max-width: 575.98px) {
-  .flex-container .hero-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     justify-content: space-around;
     text-align: center;
     margin-left: 3rem;
@@ -229,6 +247,7 @@ body {
   padding: 1em;
 }
 .flex-container .firstPage-socials svg {
+  width: 4.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   cursor: pointer;
@@ -239,10 +258,19 @@ body {
   transform: scale(1.2);
   fill: #35b8f0;
 }
+@media (max-width: 991.98px) {
+  .flex-container .firstPage-socials svg {
+    width: 4rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .flex-container .firstPage-socials svg {
+    width: 3rem;
+  }
+}
 @media (max-width: 575.98px) {
   .flex-container .firstPage-socials svg {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
   }
 }
 
@@ -289,9 +317,10 @@ body {
     text-align: center;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 400px) {
   .aboutMe-section .aboutMe-container {
     text-align: center;
+    font-size: 1rem;
   }
 }
 .aboutMe-section .photo-div {
@@ -404,6 +433,11 @@ body {
     width: 18rem;
   }
 }
+@media (max-width: 300px) {
+  .projects-container .project-div {
+    width: 15rem;
+  }
+}
 @media (max-width: 1600px) {
   .projects-container {
     display: flex;
@@ -444,6 +478,11 @@ body {
     font-size: 3rem;
   }
 }
+@media (max-width: 400px) {
+  .footerSection .contact-div h3 {
+    font-size: 2rem;
+  }
+}
 .footerSection .contact-div p {
   font-size: 2rem;
   font-weight: 700;
@@ -470,6 +509,11 @@ body {
 .footerSection .contact-div .iconsDiv a i {
   font-size: 5rem;
   cursor: pointer;
+}
+@media (max-width: 400px) {
+  .footerSection .contact-div .iconsDiv a i {
+    font-size: 3rem;
+  }
 }
 .footerSection .contact-div .iconsDiv a:hover {
   transform: scale(1.1);

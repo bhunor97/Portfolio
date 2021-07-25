@@ -22,9 +22,13 @@ body {
 
     .material-icons {
       font-size: 3rem;
-      @media (max-width: 575.98px) {
+
+      @media (max-width: 767.98px) {
         font-size: 2rem;
       }
+    }
+    @media (max-width: 575.98px) {
+      display: none;
     }
   }
 
@@ -48,8 +52,18 @@ body {
         color: #fff;
       }
       @media (max-width: 991.98px) {
+        margin-right: 1em;
+      }
+      @media (max-width: 767.98px) {
         margin-right: 0;
       }
+      // @media (max-width: 575.98px) {
+      //   padding: 10px;
+      // }
+    }
+    @media (max-width: 1199.98px) {
+      @include flexRowCenter;
+      list-style: none;
     }
     @media (max-width: 991.98px) {
       display: none;
@@ -65,17 +79,21 @@ body {
 
     @media (max-width: 991.98px) {
       @include flexColCenter;
-      font-size: 2.5rem;
+      font-size: 2rem;
       border: none;
       background-color: transparent;
       padding: $pad1;
       color: #fff;
     }
+    @media (max-width: 575.98px) {
+      @include flexColCenter;
+      font-size: 2rem;
+      border: none;
+      background-color: transparent;
+      padding: 10px;
+      color: #fff;
+    }
   }
-}
-
-#nav-ul.show {
-  display: block;
 }
 
 // HERO
@@ -169,11 +187,6 @@ body {
     }
     @media (max-width: 575.98px) {
       @include flexColCenter;
-      text-align: center;
-      margin-left: $marg3;
-    }
-    @media (max-width: 575.98px) {
-      @include flexColCenter;
       justify-content: space-around;
       text-align: center;
       margin-left: $marg3;
@@ -187,6 +200,7 @@ body {
     justify-content: center;
     padding: $pad1;
     svg {
+      width: 4.5rem;
       margin-top: $marg1;
       margin-bottom: $marg1;
       cursor: pointer;
@@ -196,9 +210,14 @@ body {
         transform: scale(1.2);
         fill: $color3;
       }
+      @media (max-width: 991.98px) {
+        width: 4rem;
+      }
+      @media (max-width: 767.98px) {
+        width: 3rem;
+      }
       @media (max-width: 575.98px) {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2rem;
       }
     }
   }
@@ -241,8 +260,9 @@ body {
     @media (max-width: 991.98px) {
       text-align: center;
     }
-    @media (max-width: 575.98px) {
+    @media (max-width: 400px) {
       text-align: center;
+      font-size: $fsExtraSmall;
     }
   }
 
@@ -333,6 +353,9 @@ body {
     @media (max-width: 575.98px) {
       width: 18rem;
     }
+    @media (max-width: 300px) {
+      width: 15rem;
+    }
   }
   @media (max-width: 1600px) {
     display: flex;
@@ -366,6 +389,9 @@ body {
       @media (max-width: 575.98px) {
         font-size: $fsRegular;
       }
+      @media (max-width: 400px) {
+        font-size: $fsSmall;
+      }
     }
 
     p {
@@ -390,6 +416,9 @@ body {
         i {
           font-size: $fsMedium;
           cursor: pointer;
+          @media (max-width: 400px) {
+            font-size: $fsRegular;
+          }
         }
         transition: ease 0.2s;
         &:hover {
