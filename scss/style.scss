@@ -115,6 +115,18 @@ body {
       font-size: $fsExtraLarge;
       box-shadow: inset 0 0 0 0 #fff;
       transition: ease-in-out 0.3s;
+      animation: h1-load 1000ms ease-in-out;
+
+      @keyframes h1-load {
+        0% {
+          transform: translateX(-100%);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+      }
+
       @media (max-width: 1199.98px) {
         font-size: $fsLarge;
       }
