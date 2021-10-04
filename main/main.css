@@ -22,9 +22,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation-name: nav-fade-in;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+}
+@keyframes nav-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .nav-bar .logo-div {
   padding: 1em;
+}
+@keyframes logo-animation {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
 }
 .nav-bar .logo-div .material-icons {
   font-size: 3rem;
@@ -132,13 +151,26 @@ body {
   align-items: flex-start;
   justify-content: center;
   margin-left: 10rem;
+  animation-name: hero-fade-in;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+}
+@keyframes hero-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .flex-container .hero-div h1 {
   font-weight: 700;
   font-size: 8rem;
   box-shadow: inset 0 0 0 0 #fff;
   transition: ease-in-out 0.3s;
-  animation: h1-load 1000ms ease-in-out;
+  animation-name: h1-load;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
 }
 @keyframes h1-load {
   0% {
@@ -254,6 +286,17 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1em;
+  animation-name: side-socials-fade-in;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+}
+@keyframes side-socials-fade-in {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .flex-container .firstPage-socials svg {
   width: 4.5rem;

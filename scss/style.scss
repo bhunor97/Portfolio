@@ -1,4 +1,4 @@
-@import "resets", "mixins", "colors", "fonts", "buttons", "sizes";
+@import "resets", "mixins", "colors", "fonts", "buttons", "sizes", "animations";
 
 body {
   font-family: "Poppins", sans-serif;
@@ -16,9 +16,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation-name: nav-fade-in;
+  animation-duration: $h1-fade-in;
+  animation-timing-function: ease-in-out;
+
+  @keyframes nav-fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   .logo-div {
     padding: $pad1;
+    @keyframes logo-animation {
+      0% {
+        scale: (0);
+      }
+      100% {
+        scale: (1);
+      }
+    }
 
     .material-icons {
       font-size: 3rem;
@@ -109,13 +129,27 @@ body {
     align-items: flex-start;
     justify-content: center;
     margin-left: $marg5;
+    animation-name: hero-fade-in;
+    animation-duration: $h1-fade-in;
+    animation-timing-function: ease-in-out;
+    @keyframes hero-fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 
     h1 {
       font-weight: $bold;
       font-size: $fsExtraLarge;
       box-shadow: inset 0 0 0 0 #fff;
       transition: ease-in-out 0.3s;
-      animation: h1-load 1000ms ease-in-out;
+
+      animation-name: h1-load;
+      animation-duration: $h1-fade-in;
+      animation-timing-function: ease-in-out;
 
       @keyframes h1-load {
         0% {
@@ -211,6 +245,18 @@ body {
     align-items: center;
     justify-content: center;
     padding: $pad1;
+    animation-name: side-socials-fade-in;
+    animation-duration: $h1-fade-in;
+    animation-timing-function: ease-in-out;
+    @keyframes side-socials-fade-in {
+      0% {
+        transform: translateY(100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
     svg {
       width: 4.5rem;
       margin-top: $marg1;
