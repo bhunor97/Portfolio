@@ -21,10 +21,6 @@ phone.onclick = () => {
   alert("06-30-945-2343");
 };
 
-email.onclick = () => {
-  sendEmail();
-};
-
 // CURSOR
 new kursor({
   type: 1,

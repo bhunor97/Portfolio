@@ -1,11 +1,11 @@
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -594,6 +594,12 @@ body {
 }
 .footerSection .scrollUp i:hover {
   transform: scaleY(1.5);
+}
+
+svg {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
