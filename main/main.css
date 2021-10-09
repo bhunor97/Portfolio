@@ -66,6 +66,7 @@ body {
   list-style: none;
 }
 .nav-bar .nav-ul li {
+  position: relative;
   font-size: 1rem;
   font-weight: 700;
   padding: 1em;
@@ -77,8 +78,14 @@ body {
   background-color: #35b8f0;
 }
 .nav-bar .nav-ul li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   text-decoration: none;
   color: #fff;
+  height: 5rem;
 }
 @media (max-width: 991.98px) {
   .nav-bar .nav-ul li {
@@ -106,7 +113,6 @@ body {
 }
 .nav-bar .hamburger {
   display: none;
-  cursor: pointer;
   transition: ease 0.2s;
 }
 .nav-bar .hamburger:hover {
@@ -231,7 +237,6 @@ body {
   font-weight: 700;
   margin-top: 2rem;
   border: none;
-  cursor: pointer;
   transition: 0.4s ease;
 }
 .flex-container .hero-div .button-div:hover {
@@ -302,7 +307,6 @@ body {
   width: 4.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  cursor: pointer;
   transition: 0.2s ease;
   fill: #fff;
 }
@@ -560,7 +564,6 @@ body {
 }
 .footerSection .contact-div .iconsDiv a i {
   font-size: 5rem;
-  cursor: pointer;
 }
 @media (max-width: 400px) {
   .footerSection .contact-div .iconsDiv a i {
@@ -587,7 +590,6 @@ body {
 .footerSection .scrollUp i {
   font-size: 2rem;
   color: #fff;
-  cursor: pointer;
   transition: ease-in-out 0.2s;
 }
 .footerSection .scrollUp i:hover {
