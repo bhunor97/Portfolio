@@ -363,8 +363,9 @@ body {
   @include paddingTopBottom;
   background-color: $color1;
 
-  h2 {
+  .projects-h2 {
     @include flexColCenter;
+    text-align: center;
     font-size: $fsMedium;
     font-weight: $bold;
     margin-bottom: $marg3;
