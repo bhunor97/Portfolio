@@ -21,11 +21,9 @@ phone.onclick = () => {
   alert("06-30-945-2343");
 };
 
-// EMAIL
-function sendEmail() {
-  window.location = "mailto:bhun0r97@gmail.com";
-}
-
-email.onclick = () => {
-  sendEmail();
-};
+// CURSOR
+new kursor({
+  type: 1,
+  removeDefaultCursor: false,
+  color: "#fff",
+});

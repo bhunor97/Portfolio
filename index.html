@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <!-- cursor -->
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/747d5a4b2f.js"
@@ -88,6 +90,15 @@
     </section>
     <!-- HERO SECTION END-->
 
+    <!-- PURPLE WAVE START -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 1440 255">
+      <path 
+      fill="#430ba3" 
+      fill-opacity="1"
+       d="M0,224L48,234.7C96,245,192,267,288,234.7C384,203,480,117,576,101.3C672,85,768,139,864,144C960,149,1056,107,1152,112C1248,117,1344,171,1392,197.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+    </svg>
+    <!-- PURPLE WAVE END -->
+
     <!-- ABOUT ME SECTION START -->
     <section class="aboutMe-section" id="aboutMe">
       <div class="aboutMe-container">
@@ -103,71 +114,81 @@
     </section>
     <!-- ABOUT ME SECTION END -->
 
+    <!-- YELLOW WAVE START -->
+    <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 1440 200">
+      <path 
+      fill="#f0be29" 
+      fill-opacity="1" 
+      d="M0,32L48,69.3C96,107,192,181,288,186.7C384,192,480,128,576,85.3C672,43,768,21,864,37.3C960,53,1056,107,1152,122.7C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <!-- YELLOW WAVE END -->
+
     <!-- PROJECTS SECTION START -->
     <section class="projects-section" id="projects">
-      <h2>Projects</h2>
+      <h2 class="projects-h2">React Projects</h2>
       <div class="projects-container">
         <div class="project-div">
-          <img src="img/prodLandingPage.png" alt="Product Landing Page" />
-          <h3>Product Landing Page</h3>
+          <!-- <div class="project-image-div">
+
+          </div> -->
+          <img class="project-imgs" src="img/pomodoro.png" alt="Pomodoro Clock" />
+          <h3>Pomodoro Clock</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            itaque necessitatibus placeat molestiae. Itaque magni, deserunt aut
-            reiciendis consequuntur deleniti?
+            "The Pomodoro Technique a time management method. It uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks."
           </p>
           <hr />
-          <p>
-            <a href="https://codepen.io/bhunor97/pen/yLMZYrr" target="blank"
+          <p class="view-here-p">
+            <a class="view-here-a-class" href="https://codesandbox.io/embed/25-5-clock-lk5n0?fontsize=14&hidenavigation=1&theme=dark" target="blank"
               >View Here</a
             >
           </p>
         </div>
         <div class="project-div">
-          <img src="img/tributePage.png" alt="Product Landing Page" />
-          <h3>Tribute Page</h3>
+          <img class="project-imgs" src="img/calc.png" alt="Markdown Previewe" />
+          <h3>A Simple Calculator</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            itaque necessitatibus placeat molestiae. Itaque magni, deserunt aut
-            reiciendis consequuntur deleniti?
+            A simple calculator that you can use to solve basic mathematical problems.
+            I used Math.js - an extensive math library - to achieve the desired functionality.
           </p>
           <hr />
-          <p>
-            <a href="https://codepen.io/bhunor97/pen/poRXqpy" target="blank"
+          <p class="view-here-p">
+            <a class="view-here-a-class" href="https://codesandbox.io/embed/calculator-bl2io?fontsize=14&hidenavigation=1&theme=dark" target="blank"
               >View Here</a
             >
           </p>
         </div>
         <div class="project-div">
-          <img src="img/surveyForm.png" alt="Product Landing Page" />
-          <h3>Survey Form</h3>
+          <img class="project-imgs" src="img/quote_1.png" alt="Quote API Project" />
+          <h3>Quote API Project</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            itaque necessitatibus placeat molestiae. Itaque magni, deserunt aut
-            reiciendis consequuntur deleniti?
+            A quote machine that generates a random quote for you every time you click the 'New Quote' button.
+            I used fetch API to retrieve the data. The 'socials' buttons have no functionality.
           </p>
           <hr />
-          <p>
-            <a href="https://codepen.io/bhunor97/pen/WNpvZwY" target="blank"
+          <p class="view-here-p">
+            <a class="view-here-a-class" href="https://codesandbox.io/embed/random-quote-api-project-98x88?fontsize=14&hidenavigation=1&theme=dark" target="blank"
               >View Here</a
             >
           </p>
         </div>
         <div class="project-div">
-          <img src="img/technicalDocPage.png" alt="Product Landing Page" />
-          <h3>Technical Documentation</h3>
+          <img class="project-imgs" src="img/drm_2.png" alt="Product Landing Page" />
+          <h3>Drum Machine</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            itaque necessitatibus placeat molestiae. Itaque magni, deserunt aut
-            reiciendis consequuntur deleniti?
+            A drum machine with a display bar,  showing the currently played instrument, and a volume slider.
+            Side note: The drums were also created by me.
           </p>
           <hr />
-          <p>
-            <a href="https://codepen.io/bhunor97/pen/YzZpepR" target="blank"
+          <p class="view-here-p">
+            <a class="view-here-a-class" href="https://codesandbox.io/embed/drum-machine-w0447?fontsize=14&hidenavigation=1&theme=dark" target="blank"
               >View Here</a
             >
           </p>
         </div>
       </div>
+
     </section>
     <!-- PROJECTS SECTION END -->
 
@@ -182,7 +203,7 @@
           <a href="https://codepen.io/bhunor97" target="blank">
             <i class="fab fa-codepen"></i>
           </a>
-          <a id="email">
+          <a href="mailto:bhun0r97@gmail.com" id="email">
             <i class="far fa-envelope"></i>
           </a>
           </a>
@@ -195,9 +216,8 @@
         <i class="fas fa-long-arrow-alt-up"></i>
       </a>
     </footer>
-    <div class="map_div" id="map_div">
-
-    </div>
+    <!-- CURSOR.JS -->
+    <script src="https://unpkg.com/kursor"></script>
     <!-- CONTACT-ME SECTION END -->
     <script src="main/app.js"></script>
   </body>
